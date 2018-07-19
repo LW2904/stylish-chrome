@@ -1,9 +1,9 @@
 {
-	"name": "__MSG_extName__",
-	"short_name": "Stylish",
-	"version": "1.7.6",
-	"description": "__MSG_description__",
-	"homepage_url": "https://userstyles.org",
+	"name": "Free Stylish",
+	"short_name": "fStylish",
+	"version": "1.0.0",
+	"description": "Customize any website.",
+	"homepage_url": "https://example.com",
 	"manifest_version": 2,
 	"icons": {
 		"128": "images/128.png"
@@ -20,7 +20,6 @@
 	"optional_permissions": [
 		"downloads"
 	],
-	"content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'",
 	"background": {
 		"scripts": ["uaparser/uaparser.js", "src/utils.js", "src/refilter.js", "src/messaging.js", "src/storage-websql.js", "src/storage.js", "src/analyticsMain.js", "src/background.js"]
 	},
@@ -55,7 +54,6 @@
 	"web_accessible_resources": [
 		"images/128.png"
 	],
-    "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCr3yiiN7TIDoaEvh7W34g5YsxfUIGkvVUylq9bm29v8EzULCNIpi74KOBrvprYB6/YAdLjvYmGya1CJfgkuQy3/rZ7gGLSrDk9B1qgsHurhNaCJ0ogfSR50bfYUp0qJlIAgBgZWrVWLogfXbU8x+LFgV8pdMjFuWJgzketxjP6nwIDAQAB",
 	"options_page": "manage.html",
 	"browser_action": {
 		"default_icon": {
