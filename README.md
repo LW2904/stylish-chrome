@@ -1,16 +1,12 @@
-Stylish - a user style manager for Google Chrome and Opera.
+Stylish - a user style manager for Google Chrome.
 
-## Releases
+This is an ugly and quick fix born out of annoyance. During my testing the extension never sent any requests, and I replaced all tracking related functions that I found with stubs or removed them.
 
-Releases are available at [the Chrome Web Store](https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe) and [the Opera add-ons site](https://addons.opera.com/en/extensions/details/stylish/).
+## Installation
 
-## Help
-
-See the [help docs](http://userstyles.org/help/stylish_chrome) or [ask in the forum](https://forum.userstyles.org).
-
-## Contributing
-
-The source is hosted on [GitHub](https://github.com/JasonBarnabe/stylish-chrome) and pull requests are welcome. Translations can be done on [Transifex](https://www.transifex.com/projects/p/stylish-for-chrome/) but are welcome as pull requests as well.
+1. Download the latest `free-stylish.ctx` from the [Releases](https://github.com/LW2904/stylish-chrome/releases) section.
+2. Navigate to `chrome://extensions` and drag n' drop the downloaded file onto the page.
+3. Review the permissions and proceed to add the extension.
 
 ## License
 
