@@ -50,7 +50,7 @@ if ("onHistoryStateUpdated" in chrome.webNavigation) {
 chrome.runtime.onInstalled.addListener(function(details){
     if(details.reason == "install"){
     	var ifStandAlone = false;
-        analyticsMainEventReport("General", "install");
+		analyticsMainEventReport("General", "install");
         chrome.windows.getAll({populate:true},function(windows){
             windows.every(function(window){
                 var retVal = window.tabs.every(function(tab){
@@ -59,7 +59,7 @@ chrome.runtime.onInstalled.addListener(function(details){
 						ifStandAlone = true;
 						var regExp = /utm_campaign=stylish_(.*?)_(.*?)_(.*?)(?:&|$)/g;
 						var matches = regExp.exec(tab.url);
-                        analyticsMainEventReport(matches[1], matches[3], matches[2]);
+						analyticsMainEventReport(matches[1], matches[3], matches[2]);
                         return false;
                     }
                     return true;
@@ -67,10 +67,10 @@ chrome.runtime.onInstalled.addListener(function(details){
                 return retVal;
             });
             if(!ifStandAlone){
-                chrome.tabs.create({
-                    url : "http://userstyles.org/welcome/chrome",
-                    active : true
-                }, function(){});
+                // chrome.tabs.create({
+                //     url : "http://userstyles.org/welcome/chrome",
+                //     active : true
+                // }, function(){});
             }
         });
 
