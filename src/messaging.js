@@ -15,17 +15,18 @@ function notifyAllTabs(request){
     });
 }
 
-var sub_id = utils.getSubID();
-if (!sub_id) {
-    if (utils.getBrowser().name == "Baidu") {
-        sub_id = 547;
-        utils.setSubID(sub_id);
-    }
-    else {
-        sub_id = 541;
-        utils.setSubID(sub_id);
-    }
-}
+let sub_id = 0;
+// var sub_id = utils.getSubID();
+// if (!sub_id) {
+//     if (utils.getBrowser().name == "Baidu") {
+//         sub_id = 547;
+//         utils.setSubID(sub_id);
+//     }
+//     else {
+//         sub_id = 541;
+//         utils.setSubID(sub_id);
+//     }
+// }
 
 function tokenize(o){
     return prefs.get("enc")["makeParams"](o, "rc");

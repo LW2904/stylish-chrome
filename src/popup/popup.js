@@ -140,11 +140,11 @@ function updatePopUp(tab) {
 }
 
 function proceedToOptMessage(){
-	getSync().get(function(set){
-		if (!set.settings.analyticsEnabled){
-			displayOptMessage();
-		}
-	});
+	// getSync().get(function(set){
+	// 	if (!set.settings.analyticsEnabled){
+	// 		displayOptMessage();
+	// 	}
+	// });
 }
 
 function displayOptMessage(){
