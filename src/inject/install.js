@@ -65,6 +65,10 @@ function sendEvent(type, data) {
 	if (typeof data == "undefined") {
 		data = null;
 	}
+
+	console.log('sendEvent');
+	console.log({ type, data });
+
 	var stylishEvent = new CustomEvent(type, {detail: data});
 	document.dispatchEvent(stylishEvent);
 }

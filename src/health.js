@@ -5,7 +5,8 @@ function healthCheck() {
 		if (ok === undefined) { // Chrome is starting up
 			healthCheck();
 		} else if (!ok && confirm(t("dbError"))) {
-			window.open("http://userstyles.org/dberror");
+			// window.open("http://userstyles.org/dberror");
+			console.error('dberror');
 		}
 	});
 }
