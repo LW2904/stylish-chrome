@@ -20,19 +20,10 @@
 // }
 
 const ga = () => {};
-
-function analyticsMainEventReport(category, action, label, value) {
-    console.log(`supressed analytics main report`);
-    console.log({ category, action, label, value });
-}
+const analyticsMainEventReport = () => {};
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   //console.log(request);
   // if(request.gacategory)
   //   analyticsMainEventReport(request.gacategory, request.gaaction || null, request.galabel || null, request.gavalue || null);
-
-  if (request.gacategory) {
-    console.log('received GA request');
-    console.log(request);
-  }
 });
